@@ -274,7 +274,12 @@ const Hero = () => {
             </a>
             
             <button
-              onClick={handleResumeDownload}
+                onClick={() =>
+    window.open(
+      "https://drive.google.com/file/d/1bTN1WUNtWf9yiySEWLiRfsvvzHpnXKK-/view?usp=drivesdk",
+      "_blank"
+    )
+  }
               className="group relative p-4 rounded-xl backdrop-blur-sm border border-slate-700/50 transition-all duration-300 hover:scale-110 hover:bg-emerald-900/30 hover:shadow-lg hover:shadow-emerald-500/30"
               title="Download Resume"
             >
