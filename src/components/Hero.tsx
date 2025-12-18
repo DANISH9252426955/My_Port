@@ -183,17 +183,23 @@ const Hero = () => {
                   </span>
                 </a>
                 
-                <button
-                  onClick={handleResumeDownload}
-                  className="group relative px-8 py-3 rounded-full overflow-hidden transition-all duration-300 hover:scale-105"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-teal-500" />
-                  <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-teal-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <span className="relative flex items-center gap-2 font-semibold text-white">
-                    <Download size={18} className="group-hover:animate-bounce" />
-                    Resume
-                  </span>
-                </button>
+               <button
+  onClick={() =>
+    window.open(
+      "https://drive.google.com/file/d/1bTN1WUNtWf9yiySEWLiRfsvvzHpnXKK-/view?usp=drivesdk",
+      "_blank"
+    )
+  }
+  className="group relative px-8 py-3 rounded-full overflow-hidden transition-all duration-300 hover:scale-105"
+>
+  <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-teal-500" />
+  <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-teal-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+  <span className="relative flex items-center gap-2 font-semibold text-white">
+    <Download size={18} className="group-hover:animate-bounce" />
+    Resume
+  </span>
+</button>
+
               </div>
             </div>
 
